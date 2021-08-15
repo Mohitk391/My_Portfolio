@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogs | Mohit Patel</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="hero container-center">
+        <h2 class="hero-heading">Some useful git commands you may or may not know</h2>
+        <h5>January, 2021</h5>
+        <img class="hero-img" style="max-width: 50%" src="images/git-icon.png" />
+
+    </header>
+
+    <div class="container container-center">
+        <p>Git is a distributed version-control system for tracking changes in any set of files, originally designed for
+            coordinating work among programmers cooperating on source code during software development. Git is the
+            foundation of the open source development. Its goals include speed, data integrity, and support for
+            distributed, non-linear workflows.
+        </p>
+        <br>
+        <p><strong>Git is...?</strong></p>
+        <p>Git is essentially nothing but a tracking system, keeping a track of each and every change/modifications done
+            in the file. Git keeps record of each and every changes done in the file along with the details of the
+            modifier, once they are commited. Different users can work on same file at the same time through the concept
+            of branching and merging.
+        </p>
+
+        <br>
+        <p><strong>Branching..?</strong></p>
+        <p>Branching means creating a copy/clone of the original file in which the user can work on without affecting
+            the original file. The changes/ modifications of the clone can be merged in the original file once approved
+            by the main user/owner
+            of the original file.
+        </p>
+        <div class="hero container-center">
+            <img class="hero-img" style="max-width: 70%" src="images/branching-illustration@2x.png">
+        </div>
+        <br>
+        <p><strong>Why branching?</strong></p>
+        <p>Git is mostly used by team of programmers working on different aspects of a single project. They all work on
+            individual sections. If they are to work on the original file at the same time, the file would get messy and
+            full of errors due to different functions being added and removed simultaneously.
+        </p>
+
+        <p> Branches allows each developer to work on their own copy/clone version of file and once their work is
+            complete, they request for merging their work on the original file. If any aspect of the project is faulty,
+            it might affect the whole project if merged directly.
+        </p>
+
+        <br>
+        <p><strong>Git commands..</strong></p>
+        <p>There are many commands in git to fulfill the above goals of git. They should be used carefully though as some of them are non-reversible and may result in unwanted modifications or even deletion of important data and/or files. But they are easy to understand and after some practice you can use them easily. There are more than 150 commands present in git. Some of the git commands you may or may not know are as follows
+        </p>
+
+        <ol>
+            <li>git rev-parse</li>
+            <li>git tag</li>
+            <li>git log</li>
+            <li>git remote</li>
+            <li>git stash</li>
+        </ol>
+
+        <p>
+            <strong>1. git rev-parse :</strong>
+            <section class="ow">
+                <div class="container container-center" style="text-align: center; padding: 0.5rem;">
+                    <p>git rev-parse [&lt;options&gt;] &lt;args&gt;…​</p>
+                </div>
+            </section>
+        </p>
+        <p>
+            <strong>git rev-parse</strong> is an ancillary plumbing command primarily used for manipulation. Git
+            consistently uses the term rev in plumbing commands as short for "revision" and generally meaning the
+            40-character SHA1 hash for a commit. The command's main purpose is transforming a user-friendly reference
+            like a branch name or abbreviated hash into the unambiguous 40-character SHA1 hash.
+        </p>
+        <p>In other words, git rev-parse is short for git revision-parse. It takes the given input and returns the
+        corresponding 40-character revision ID. For more details please click <a href="https://git-scm.com/docs/git-rev-parse">here</a>.
+        </p>
+
+        <p>
+            <strong>2. git tag :</strong>
+            <section class="ow">
+                <div class="container container-center" style="text-align: center; padding: 0.5rem;">
+                    <p>git tag [&lt;options&gt;] &lt;args&gt;…​</p>
+                </div>
+            </section>
+        </p>
+        <p>
+            Tags are references that point to specific points in Git history. Tagging is generally used to capture a point in history that is used for a marked version release (i.e. v1.0.1). Git supports two different types of tags, annotated and lightweight tags. Lightweight tags and Annotated tags differ in the amount of accompanying meta data they store.
+        </p>
+        <p> A lightweight tag is very much like a branch that doesn’t 
+            change, it’s just a pointer to a specific commit. Annotated tags store extra meta data such as: the tagger name, email, and date. This is 
+            important data for a public release. For more details please click  <a href="https://www.javatpoint.com/git-tags">here</a>.
+        </p>
+
+        <p>
+            <strong>3. git log :</strong>
+            <section class="ow">
+                <div class="container container-center" style="text-align: center; padding: 0.5rem;">
+                    <p>git log [&lt;options&gt;] [&lt;revision range&gt;] [[--] &lt;path&gt;…​]​</p>
+                </div>
+            </section>
+        </p>
+        <p>
+            The purpose of any version control system is to record changes to your code. This gives you the power to go back into your project history to see who contributed what, figure out where bugs were introduced, and revert problematic changes. The Git Log tool allows you to view information about previous commits that have occurred in a project.
+        </p>
+        <p>The simplest version of the log command shows the commits that lead up to the state of the currently checked out branch. These commits are shown in reverse chronological order (the most recent commits first). There are various options associated with git log which helps you to view previous commits as per your requirements. You can check them and other details  <a href="https://www.javatpoint.com/git-log">here</a>.
+        </p>
+
+        <p>
+            <strong>4. git remote :</strong>
+            <section class="ow">
+                <div class="container container-center" style="text-align: center; padding: 0.5rem;">
+                    <p>git remote [&lt;options&gt;] &lt;args&gt;…​</p>
+                </div>
+            </section>
+        </p>
+        <p>
+            The <strong>git remote</strong> command is one piece of the broader system which is responsible for syncing changes. Records registered through the git remote command are used in conjunction with the git fetch, git push, and git pull commands. The git remote command lets you create, view, and delete connections to other repositories. 
+        </p>
+        <p>It is a shared repository that all team members use to exchange their changes. A remote repository is stored on a code hosting service like an internal server, GitHub, Subversion, and more. You can check the options and the other details  <a href="https://www.javatpoint.com/git-remote#:~:text=In%20Git%2C%20the%20term%20remote,GitHub%2C%20Subversion%2C%20and%20more.&text=git%20versioning%20data.">here</a>.
+        </p>
+
+        <p>
+            <strong>5. git stash :</strong>
+            <section class="ow">
+                <div class="container container-center" style="text-align: center; padding: 0.5rem;">
+                    <p>git stash [optional commands [&lt;options&gt;] &lt;args&gt;…​</p>
+                </div>
+            </section>
+        </p>
+        <p>
+            Use <strong>git stash</strong> when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit. The git stash command enables you to switch branches without committing the current branch. 
+        </p>
+        <p>Generally, the stash's meaning is "store something safely 
+        in a hidden place." The sense in Git is also the same for stash; Git temporarily saves your data safely without committing. For more details check <a href="https://www.javatpoint.com/git-stash">here</a>.
+        </p>
+
+
+
+    </div>
+</body>
+
+</html>
